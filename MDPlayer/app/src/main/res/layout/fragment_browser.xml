@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+		android:layout_width="match_parent" android:layout_height="24dp"
+		android:background="#0000FF" android:gravity="center_vertical">
+		<Button
+			android:layout_width="24dp" android:layout_height="wrap_content"
+			android:background="#00FFFFFF" android:text="&lt;" android:textColor="#FFFFFF"
+			android:textSize="18sp" android:gravity="center"
+			android:id="@+id/btnBack"/>
+		
+		<TextView
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:gravity="center" android:text="Por favor, aguarde."
+			android:textColor="#FFFFFF"
+			android:id="@+id/tvStatus"/>
+	</LinearLayout>
+	
+	<FrameLayout
+		android:layout_width="match_parent" android:layout_height="match_parent">
+		<WebView
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:id="@+id/wb"/>
+		<ProgressBar
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:id="@+id/progress"/>
+	</FrameLayout>
+</LinearLayout>

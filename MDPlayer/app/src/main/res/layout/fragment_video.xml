@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:background="@android:color/black">
+
+		<VideoView
+			android:id="@+id/mVideoView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FF01E4ED">
+
+		<ImageButton
+			android:id="@+id/btnPlay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/play_arrow"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnRepeatOpt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/shuffle"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnSkipPrevious"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/skip_previous"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnSkipNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/skip_next"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnOpenFolder"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/folder"
+			style="@style/controls"/>
+		
+		<ImageButton
+			android:id="@+id/btnAddFile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/add"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnVolume"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/volume_up"
+			style="@style/controls"/>
+
+		<ImageButton
+			android:id="@+id/btnInternet"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/internet"
+			style="@style/controls"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
